@@ -5,10 +5,7 @@
 #SBATCH --mem-per-cpu=128G    # memory per CPU core
 #SBATCH -J "Sleuth"       # job name
 #SBATCH --array=9,10         # job array 
-#SBATCH --mail-user=alyssaparker2000@gmail.com   # email address
-#SBATCH --mail-type=BEGIN
-#SBATCH --mail-type=END
-#SBATCH --mail-type=FAIL
+
 # Compatibility variables for PBS. Delete if not needed.
 export PBS_NODEFILE=`/fslapps/fslutils/generate_pbs_nodefile`
 export PBS_JOBID=$SLURM_JOB_ID

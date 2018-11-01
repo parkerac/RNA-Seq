@@ -15,12 +15,6 @@ normalizedGeneCounts <- select(normalizedGeneCounts, -gene)
 # Read gene-set database from file
 geneSetDatabase <- getGmt("/fslhome/parkerac/compute/h.all.v6.1.symbols.gmt.txt", collectionType=BroadCollection(category="c2"), geneIdType=SymbolIdentifier())
 
-#1 ref 1:2 samp 3
-#2 ref 3:4 samp 1:2
-#3 ref 3:4,7 samp 1:2,5:6
-#6 ref 3:4 samp 1:2
-#7 ref 3:4 samp 1:2
-#8 ref 3:4,7:8 samp 1:2,5:6
 
 cn=colnames(normalizedGeneCounts)
 comparison <- args[1]

@@ -5,10 +5,6 @@
 #SBATCH --nodes=1   # number of nodes
 #SBATCH --mem-per-cpu=16G   # memory per CPU core
 #SBATCH -J "Kallisto"   # job name
-#SBATCH --mail-user=alyssaparker2000@gmail.com   # email address
-#SBATCH --mail-type=BEGIN
-#SBATCH --mail-type=END
-#SBATCH --mail-type=FAIL
 
 # Compatibility variables for PBS. Delete if not needed.
 export PBS_NODEFILE=`/fslapps/fslutils/generate_pbs_nodefile`
