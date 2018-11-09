@@ -15,13 +15,13 @@ Scripts should be run in the following order:
 All other scripts are called within the scripts listed above.
 
 ## Description of Scripts
-trimmomatic_sbatch.sh submits a job to the supercomputer to run trimmomatic using run_trimmomatic.sh. Trimmomatic removes adapters and bad quality reads from the RNA-seq data. The output from trimmomatic is compiled in a folder called "trimmomatic_output." 
-kallisto_sbatch.sh submits a job to the supercomputer to run kallisto using run_kallisto.sh. Kallisto performs a pseudoalignment of the RNA-seq reads and quantifies transcript abundances. The output from kallisto is compiled in a folder called "kallisto output."
+**trimmomatic_sbatch.sh** submits a job to the supercomputer to run trimmomatic using **run_trimmomatic.sh**. Trimmomatic removes adapters and bad quality reads from the RNA-seq data. The output from trimmomatic is compiled in a folder called "trimmomatic_output." 
+**kallisto_sbatch.sh** submits a job to the supercomputer to run kallisto using **run_kallisto.sh**. Kallisto performs a pseudoalignment of the RNA-seq reads and quantifies transcript abundances. The output from kallisto is compiled in a folder called "kallisto output."
 
-sleuth_array.sh executes multiple scripts that run sleuth and perform a variety of transformations on the data.
+**sleuth_array.sh** executes multiple scripts that run sleuth and perform a variety of transformations on the data.
 
-Before running sleuth, metadata files must be written for each comparison. These files should list the samples used in each comparison and which group each of the samples belongs to (control or mutant). Data must be sorted into comparison folders. If metadata files are written properly, this can be completed using copyData.R.
+Before running sleuth, metadata files must be written for each comparison. These files should list the samples used in each comparison and which group each of the samples belongs to (control or mutant). Data must be sorted into comparison folders. If metadata files are written properly, this can be completed using **copyData.R**.
 
-After the data is sorted, sleuth can be run using sleuth_script.R. In our analysis, we were interested in fold change values, so we used a function to transform b values to fold change values. This function is executed in sleuth_script.R.
+After the data is sorted, sleuth can be run using **sleuth_script.R**. In our analysis, we were interested in fold change values, so we used a function to transform b values to fold change values. This function is executed in **sleuth_script.R**.
 
 
