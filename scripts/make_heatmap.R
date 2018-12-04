@@ -26,5 +26,5 @@ condition <- c("black", "white")
 names(condition) <- c("wild_type", "mutation")
 anno_colors <- list(condition = condition)
 heatmap <- plot_transcript_heatmap(so, transcripts, fontsize = 4, cluster_rows = FALSE, annotation_colors = anno_colors, clustering_method = "mcquitty")
-ggsave(paste0("/fslhome/parkerac/heatmaps/", comparison, "_heatmap.pdf"), heatmap)
-#ggsave(paste0(directory, "_heatmap.pdf"), heatmap)
+
+ggsave(paste0(directory, "_heatmap.pdf"), heatmap)

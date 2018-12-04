@@ -21,5 +21,4 @@ volcano <- ggplot(plot_data, aes(x=log2_fold_change, y=nlp, label=gene)) +
   geom_text_repel(aes(label=ifelse(nlp>=cutoff, as.character(gene), '')), hjust=-0.1, vjust=0, size=2.5) +
   ggtitle(title)
 
-#ggsave(paste0("/fslhome/parkerac/volcanos/", comparison, "_volcano.pdf"), volcano)
 ggsave(paste0(directory, "_volcano.pdf"), volcano)  
