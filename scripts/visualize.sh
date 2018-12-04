@@ -5,7 +5,6 @@
 #SBATCH --mem-per-cpu=128G    # memory per CPU core
 #SBATCH -J "Visualize"       # job name
 #SBATCH --array=1-15         # job array 
-#SBATCH --mail-user=alyssaparker2000@gmail.com   # email address
 #SBATCH --mail-type=BEGIN
 #SBATCH --mail-type=END
 #SBATCH --mail-type=FAIL
